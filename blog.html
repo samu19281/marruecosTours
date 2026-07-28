@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Blog — Khamlia Tour</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&family=Manrope:wght@300;400;500;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="arabesque-bg">
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <span class="material-symbols-outlined nav-menu-icon">menu</span>
+      <img src="img/logo-khamlia.png" alt="Khamlia Tour" class="nav-logo-img"/>
+      <span class="logo">KHAMLIA TOUR</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+      <li><a href="sobre-nosotros.html" data-i18n="nav.sobreNosotros">Sobre nosotros</a></li>
+      <li><a href="experiencias.html" data-i18n="nav.experiencias">Experiencias</a></li>
+      <li><a href="destinos.html" data-i18n="nav.destinos">Destinos</a></li>
+      <li><a href="index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
+      <li><a href="blog.html" class="active" data-i18n="nav.blog">Blog</a></li>
+    </ul>
+    <button class="btn btn-primary" onclick="window.location.href='index.html#contacto'" data-i18n="nav.reserva">Reserva ahora</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="experiences-hero wrap">
+    <div class="experiences-hero-row reveal" style="border-bottom:1px solid var(--outline-variant); padding-bottom:32px;">
+      <div>
+        <span class="eyebrow" data-i18n="blog.eyebrow">Historias desde Marruecos</span>
+        <h1 data-i18n="blog.title">El Blog de Khamlia Tour</h1>
+      </div>
+      <p class="desc" data-i18n="blog.desc">Relatos, consejos de viaje y momentos reales de nuestras rutas por Marruecos.</p>
+    </div>
+  </section>
+
+  <!-- GRID DE ARTÍCULOS -->
+  <section class="wrap" style="padding: 20px 0 120px;">
+    <div class="blog-grid">
+
+      <a href="blog-ecoturismo.html" class="blog-card reveal">
+        <div class="blog-card-photo" style="background-image:url('img/blog/ecoturismo/ecoturismo-01.webp');"></div>
+        <div class="blog-card-body">
+          <span class="eyebrow" data-i18n="blog.post.ecoturismo.tag">Turismo responsable</span>
+          <h3 data-i18n="blog.post.ecoturismo.title">Ecoturismo en el Sáhara: viajar sin dejar huella</h3>
+          <p data-i18n="blog.post.ecoturismo.excerpt">Por qué en Khamlia apostamos por un turismo que protege el desierto, beneficia a la comunidad local y respeta el ritmo de los nómadas.</p>
+          <span class="blog-card-link"><span data-i18n="blog.verArticulo">Leer artículo</span> <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span></span>
+        </div>
+      </a>
+
+      <a href="blog-erg-chebbi.html" class="blog-card reveal">
+        <div class="blog-card-photo" style="background-image:url('img/blog/erg-chebbi/erg-chebbi-01.webp');"></div>
+        <div class="blog-card-body">
+          <span class="eyebrow" data-i18n="blog.post.erg-chebbi.tag">Destino</span>
+          <h3 data-i18n="blog.post.erg-chebbi.title">Erg Chebbi: las dunas más altas del Sáhara marroquí</h3>
+          <p data-i18n="blog.post.erg-chebbi.excerpt">Un recorrido por el mar de arena más espectacular de Marruecos: 21 km de dunas doradas de hasta 150 metros de altura, a las puertas de Merzouga.</p>
+          <span class="blog-card-link"><span data-i18n="blog.verArticulo">Leer artículo</span> <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span></span>
+        </div>
+      </a>
+
+      <a href="blog-gnaoua.html" class="blog-card reveal">
+        <div class="blog-card-photo" style="background-image:url('img/blog/gnaoua/gnaoua-01.webp');"></div>
+        <div class="blog-card-body">
+          <span class="eyebrow" data-i18n="blog.post.gnaoua.tag">Cultura y música</span>
+          <h3 data-i18n="blog.post.gnaoua.title">La cultura Gnaoua en el sureste de Marruecos</h3>
+          <p data-i18n="blog.post.gnaoua.excerpt">De dónde viene el pueblo Gnaoua, por qué su música nació como forma de resistencia, y la leyenda que sitúa su origen junto al Profeta.</p>
+          <span class="blog-card-link"><span data-i18n="blog.verArticulo">Leer artículo</span> <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span></span>
+        </div>
+      </a>
+
+      <a href="blog-musica-khamlia.html" class="blog-card reveal">
+        <div class="blog-card-photo" style="background-image:url('img/blog/musica-khamlia/musica-khamlia-01.webp');"></div>
+        <div class="blog-card-body">
+          <span class="eyebrow" data-i18n="blog.post.musica-khamlia.tag">Vida en la aldea</span>
+          <h3 data-i18n="blog.post.musica-khamlia.title">Khamlia: la aldea, sus costumbres y su gastronomía</h3>
+          <p data-i18n="blog.post.musica-khamlia.excerpt">Historia de una aldea Gnaoua fundada en 1950 junto a las dunas de Erg Chebbi: su gente, su cuscús de los viernes, su artesanía y sus fiestas.</p>
+          <span class="blog-card-link"><span data-i18n="blog.verArticulo">Leer artículo</span> <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span></span>
+        </div>
+      </a>
+
+      <a href="blog-monica.html" class="blog-card reveal">
+        <div class="blog-card-photo" style="background-image:url('img/blog/monica/monica-01.webp');"></div>
+        <div class="blog-card-body">
+          <span class="eyebrow" data-i18n="blog.post.monica.tag">Testimonios</span>
+          <h3 data-i18n="blog.post.monica.title">Mónica: veinte días de voluntariado en Khamlia, con mis hijas</h3>
+          <p data-i18n="blog.post.monica.excerpt">El testimonio de una madre y sus tres hijas que viajaron 1.560 km desde Madrid para hacer voluntariado con los niños de Khamlia, y que volvieron dos veces.</p>
+          <span class="blog-card-link"><span data-i18n="blog.verArticulo">Leer artículo</span> <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span></span>
+        </div>
+      </a>
+
+      <a href="blog-pigeons-du-sable.html" class="blog-card reveal">
+        <div class="blog-card-photo" style="background-image:url('img/blog/pigeons-du-sable/pigeons-du-sable-01.webp');"></div>
+        <div class="blog-card-body">
+          <span class="eyebrow" data-i18n="blog.post.pigeons-du-sable.tag">Música y tradición</span>
+          <h3 data-i18n="blog.post.pigeons-du-sable.title">Les Pigeons du Sable: la música Gnaoua de Khamlia</h3>
+          <p data-i18n="blog.post.pigeons-du-sable.excerpt">La historia del grupo de música Gnaoua fundado por el maestro Zaid Oujeea en Khamlia, y su recorrido desde el pueblo hasta festivales en Europa y el Golfo.</p>
+          <span class="blog-card-link"><span data-i18n="blog.verArticulo">Leer artículo</span> <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span></span>
+        </div>
+      </a>
+
+      <a href="blog-pizza-berebere.html" class="blog-card reveal">
+        <div class="blog-card-photo" style="background-image:url('img/blog/pizza-berebere/pizza-berebere-01.webp');"></div>
+        <div class="blog-card-body">
+          <span class="eyebrow" data-i18n="blog.post.pizza-berebere.tag">Gastronomía</span>
+          <h3 data-i18n="blog.post.pizza-berebere.title">Pizza bereber: la receta tradicional del desierto</h3>
+          <p data-i18n="blog.post.pizza-berebere.excerpt">Cómo se prepara la pizza bereber, el plato estrella del desierto de Merzouga, cocinada bajo las brasas y la arena de una fogata de palmera.</p>
+          <span class="blog-card-link"><span data-i18n="blog.verArticulo">Leer artículo</span> <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span></span>
+        </div>
+      </a>
+
+      <a href="blog-informacion-practica.html" class="blog-card reveal">
+        <div class="blog-card-photo" style="background-image:url('img/blog/informacion-practica/informacion-practica-01.webp');"></div>
+        <div class="blog-card-body">
+          <span class="eyebrow" data-i18n="blog.post.informacion-practica.tag">Guía de viaje</span>
+          <h3 data-i18n="blog.post.informacion-practica.title">Guía práctica para viajar a Marruecos y al desierto de Erg Chebbi</h3>
+          <p data-i18n="blog.post.informacion-practica.excerpt">Dinero, tarjetas, idiomas, salud, documentación y clima: todo lo que necesitas saber antes de viajar al sureste de Marruecos y las dunas de Merzouga.</p>
+          <span class="blog-card-link"><span data-i18n="blog.verArticulo">Leer artículo</span> <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span></span>
+        </div>
+      </a>
+
+      <a href="blog-artesania.html" class="blog-card reveal">
+        <div class="blog-card-photo" style="background-image:url('img/blog/artesania/artesania-01.webp');"></div>
+        <div class="blog-card-body">
+          <span class="eyebrow" data-i18n="blog.post.artesania.tag">Artesanía</span>
+          <h3 data-i18n="blog.post.artesania.title">Artesanía en Khamlia: el telar de las mujeres del desierto</h3>
+          <p data-i18n="blog.post.artesania.excerpt">Cómo las mujeres de Khamlia tejen a mano alfombras bereberes con lana local y telas recicladas, y cómo visitar su taller y comprarles directamente.</p>
+          <span class="blog-card-link"><span data-i18n="blog.verArticulo">Leer artículo</span> <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span></span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Khamlia Tour</h3>
+      <p data-i18n="exp.footerDesc">Curamos experiencias de viaje profundas y significativas a través del Reino de Marruecos.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.explorar">Explorar</h4>
+      <div class="footer-links">
+        <a href="sobre-nosotros.html" data-i18n="footer.sobreNosotros">Sobre nosotros</a>
+        <a href="destinos.html" data-i18n="nav.destinos">Destinos</a>
+        <a href="experiencias.html" data-i18n="nav.experiencias">Experiencias</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.conecta">Conecta</h4>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/khamliatour.sarl/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+        <a href="https://wa.me/212666146713" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.512-2.96-2.626-.087-.114-.694-.925-.694-1.765s.432-1.251.586-1.421c.154-.17.335-.213.447-.213.112 0 .224 0 .321.004.104.002.241-.039.374.285.136.331.468 1.14.509 1.224.041.084.068.182.012.294-.056.113-.084.183-.168.281-.084.097-.176.216-.252.288-.084.079-.172.165-.074.333.098.167.435.718.934 1.162.644.573 1.186.751 1.353.834.166.083.264.069.362-.041.098-.111.419-.487.531-.654.112-.167.224-.139.378-.083.154.056.974.459 1.141.542s.28.125.321.194c.042.07.042.404-.102.809z"/></svg>
+          WhatsApp
+        </a>
+        <a href="mailto:khamliatour@gmail.com?subject=Consulta%20desde%20la%20web">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          khamliatour@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-i18n="footer.rights">© 2026 Khamlia Tour. Todos los derechos reservados.</p>
+    <div class="legal">
+      <a href="#" data-i18n="footer.privacidad">Privacidad</a>
+      <a href="#" data-i18n="footer.terminos">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/212666146713" class="whatsapp-float" aria-label="Escríbenos por WhatsApp" data-i18n-aria-label="whatsapp.aria">
+  <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.512-2.96-2.626-.087-.114-.694-.925-.694-1.765s.432-1.251.586-1.421c.154-.17.335-.213.447-.213.112 0 .224 0 .321.004.104.002.241-.039.374.285.136.331.468 1.14.509 1.224.041.084.068.182.012.294-.056.113-.084.183-.168.281-.084.097-.176.216-.252.288-.084.079-.172.165-.074.333.098.167.435.718.934 1.162.644.573 1.186.751 1.353.834.166.083.264.069.362-.041.098-.111.419-.487.531-.654.112-.167.224-.139.378-.083.154.056.974.459 1.141.542s.28.125.321.194c.042.07.042.404-.102.809z"/></svg>
+</a>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

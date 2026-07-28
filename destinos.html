@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Destinos — Khamlia Tour</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&family=Manrope:wght@300;400;500;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="arabesque-bg">
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <span class="material-symbols-outlined nav-menu-icon">menu</span>
+      <img src="img/logo-khamlia.png" alt="Khamlia Tour" class="nav-logo-img"/>
+      <span class="logo">KHAMLIA TOUR</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+      <li><a href="sobre-nosotros.html" data-i18n="nav.sobreNosotros">Sobre nosotros</a></li>
+      <li><a href="experiencias.html" data-i18n="nav.experiencias">Experiencias</a></li>
+      <li><a href="destinos.html" class="active" data-i18n="nav.destinos">Destinos</a></li>
+      <li><a href="index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
+      <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+    </ul>
+    <button class="btn btn-primary" onclick="window.location.href='index.html#contacto'" data-i18n="nav.reserva">Reserva ahora</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO LISTADO -->
+  <section class="experiences-hero wrap">
+    <div class="experiences-hero-row reveal" style="border-bottom:1px solid var(--outline-variant); padding-bottom:32px;">
+      <div>
+        <span class="eyebrow" data-i18n="dest.eyebrow">De Norte a Sur</span>
+        <h1 data-i18n="dest.title">Nuestros Destinos</h1>
+      </div>
+      <p class="desc" data-i18n="dest.desc">Un vistazo a los lugares que dan forma a nuestras rutas: ciudades imperiales, pueblos de montaña y el desierto del Sáhara.</p>
+    </div>
+  </section>
+
+  <!-- GRID DE DESTINOS -->
+  <section class="wrap">
+    <div class="tour-grid">
+
+      <a href="experiencias.html?cat=ciudades" class="tour-card reveal">
+        <div class="tour-photo photo-koutoubia">
+          <span class="tour-badge" data-i18n="dest.marrakech.badge">Ciudad Imperial</span>
+        </div>
+        <div class="tour-top">
+          <h3 data-i18n="dest.marrakech.title">Marrakech</h3>
+        </div>
+        <p class="desc" style="color:var(--on-surface-variant); font-size:0.95rem; line-height:1.6; margin-bottom:24px;" data-i18n="dest.marrakech.desc">La ciudad roja: la plaza Jemaa el Fna, los zocos de la medina, el Palacio de la Bahía y el Jardín Majorelle.</p>
+        <div class="tour-link">
+          <span data-i18n="dest.viewTours">Ver tours de esta zona</span>
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </div>
+      </a>
+
+      <a href="experiencias.html?cat=ciudades" class="tour-card reveal">
+        <div class="tour-photo photo-tannery">
+          <span class="tour-badge" data-i18n="dest.fez.badge">Ciudad Imperial</span>
+        </div>
+        <div class="tour-top">
+          <h3 data-i18n="dest.fez.title">Fez</h3>
+        </div>
+        <p class="desc" style="color:var(--on-surface-variant); font-size:0.95rem; line-height:1.6; margin-bottom:24px;" data-i18n="dest.fez.desc">La medina más grande del mundo: curtidurías milenarias, madrasas coránicas y la Universidad Qaraouiyine.</p>
+        <div class="tour-link">
+          <span data-i18n="dest.viewTours">Ver tours de esta zona</span>
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </div>
+      </a>
+
+      <a href="experiencias.html?cat=cultura" class="tour-card reveal">
+        <div class="tour-photo photo-chefchaouen-2">
+          <span class="tour-badge" data-i18n="dest.chefchaouen.badge">Pueblo Azul</span>
+        </div>
+        <div class="tour-top">
+          <h3 data-i18n="dest.chefchaouen.title">Chefchaouen</h3>
+        </div>
+        <p class="desc" style="color:var(--on-surface-variant); font-size:0.95rem; line-height:1.6; margin-bottom:24px;" data-i18n="dest.chefchaouen.desc">El pueblo azul del Rif, con callejuelas pintadas de añil y vistas panorámicas sobre las montañas.</p>
+        <div class="tour-link">
+          <span data-i18n="dest.viewTours">Ver tours de esta zona</span>
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </div>
+      </a>
+
+      <a href="experiencias.html?cat=ciudades" class="tour-card reveal">
+        <div class="tour-photo photo-casablanca">
+          <span class="tour-badge" data-i18n="dest.casablanca.badge">Ciudad Imperial</span>
+        </div>
+        <div class="tour-top">
+          <h3 data-i18n="dest.casablanca.title">Casablanca</h3>
+        </div>
+        <p class="desc" style="color:var(--on-surface-variant); font-size:0.95rem; line-height:1.6; margin-bottom:24px;" data-i18n="dest.casablanca.desc">La capital económica de Marruecos, con la Mezquita Hassan II asomada al océano Atlántico.</p>
+        <div class="tour-link">
+          <span data-i18n="dest.viewTours">Ver tours de esta zona</span>
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </div>
+      </a>
+
+      <a href="experiencias.html?cat=desierto" class="tour-card reveal">
+        <div class="tour-photo photo-kasbah">
+          <span class="tour-badge" data-i18n="dest.aitbenhaddou.badge">Patrimonio UNESCO</span>
+        </div>
+        <div class="tour-top">
+          <h3 data-i18n="dest.aitbenhaddou.title">Ait Ben Haddou</h3>
+        </div>
+        <p class="desc" style="color:var(--on-surface-variant); font-size:0.95rem; line-height:1.6; margin-bottom:24px;" data-i18n="dest.aitbenhaddou.desc">Kasbah de adobe Patrimonio de la Humanidad, escenario de películas como Gladiator.</p>
+        <div class="tour-link">
+          <span data-i18n="dest.viewTours">Ver tours de esta zona</span>
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </div>
+      </a>
+
+      <a href="experiencias.html?cat=desierto" class="tour-card reveal">
+        <div class="tour-photo photo-kasbah-town">
+          <span class="tour-badge" data-i18n="dest.ouarzazate.badge">Valle de las Kasbahs</span>
+        </div>
+        <div class="tour-top">
+          <h3 data-i18n="dest.ouarzazate.title">Ouarzazate</h3>
+        </div>
+        <p class="desc" style="color:var(--on-surface-variant); font-size:0.95rem; line-height:1.6; margin-bottom:24px;" data-i18n="dest.ouarzazate.desc">La "Hollywood africana" y sus fortalezas de tierra, puerta de entrada al desierto desde el Alto Atlas.</p>
+        <div class="tour-link">
+          <span data-i18n="dest.viewTours">Ver tours de esta zona</span>
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </div>
+      </a>
+
+      <a href="experiencias.html?cat=desierto" class="tour-card reveal">
+        <div class="tour-photo photo-desert-sunset">
+          <span class="tour-badge" data-i18n="dest.merzouga.badge">Desierto del Sáhara</span>
+        </div>
+        <div class="tour-top">
+          <h3 data-i18n="dest.merzouga.title">Dunas de Merzouga</h3>
+        </div>
+        <p class="desc" style="color:var(--on-surface-variant); font-size:0.95rem; line-height:1.6; margin-bottom:24px;" data-i18n="dest.merzouga.desc">Las dunas doradas de Erg Chebbi: paseo en camello, atardecer y noche bajo un cielo de estrellas.</p>
+        <div class="tour-link">
+          <span data-i18n="dest.viewTours">Ver tours de esta zona</span>
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </div>
+      </a>
+
+      <a href="experiencias.html?cat=desierto" class="tour-card reveal">
+        <div class="tour-photo photo-khamlia-musicians">
+          <span class="tour-badge" data-i18n="dest.khamlia.badge">Cuna del Gnawa</span>
+        </div>
+        <div class="tour-top">
+          <h3 data-i18n="dest.khamlia.title">Música Gnawa en Khamlia</h3>
+        </div>
+        <p class="desc" style="color:var(--on-surface-variant); font-size:0.95rem; line-height:1.6; margin-bottom:24px;" data-i18n="dest.khamlia.desc">Nuestro pueblo, de raíces subsaharianas: noches de música Gnawa en directo con la familia Oujeaa.</p>
+        <div class="tour-link">
+          <span data-i18n="dest.viewTours">Ver tours de esta zona</span>
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="wrap">
+    <div class="newsletter-box reveal">
+      <div class="text">
+        <h2 data-i18n="common.busca">¿Busca algo a medida?</h2>
+        <p data-i18n="common.buscaDesc">Permítanos diseñar un itinerario único basado en sus deseos y ritmo de viaje.</p>
+      </div>
+      <a href="https://wa.me/212666146713" class="btn btn-primary" data-i18n="common.solicitarViaje">Solicitar Viaje Privado</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Khamlia Tour</h3>
+      <p data-i18n="exp.footerDesc">Curamos experiencias de viaje profundas y significativas a través del Reino de Marruecos.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.explorar">Explorar</h4>
+      <div class="footer-links">
+        <a href="sobre-nosotros.html" data-i18n="footer.sobreNosotros">Sobre nosotros</a>
+        <a href="destinos.html" data-i18n="nav.destinos">Destinos</a>
+        <a href="experiencias.html" data-i18n="nav.experiencias">Experiencias</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.conecta">Conecta</h4>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/khamliatour.sarl/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+        <a href="https://wa.me/212666146713" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.512-2.96-2.626-.087-.114-.694-.925-.694-1.765s.432-1.251.586-1.421c.154-.17.335-.213.447-.213.112 0 .224 0 .321.004.104.002.241-.039.374.285.136.331.468 1.14.509 1.224.041.084.068.182.012.294-.056.113-.084.183-.168.281-.084.097-.176.216-.252.288-.084.079-.172.165-.074.333.098.167.435.718.934 1.162.644.573 1.186.751 1.353.834.166.083.264.069.362-.041.098-.111.419-.487.531-.654.112-.167.224-.139.378-.083.154.056.974.459 1.141.542s.28.125.321.194c.042.07.042.404-.102.809z"/></svg>
+          WhatsApp
+        </a>
+        <a href="mailto:khamliatour@gmail.com?subject=Consulta%20desde%20la%20web">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          khamliatour@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-i18n="footer.rights">© 2026 Khamlia Tour. Todos los derechos reservados.</p>
+    <div class="legal">
+      <a href="#" data-i18n="footer.privacidad">Privacidad</a>
+      <a href="#" data-i18n="footer.terminos">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/212666146713" class="whatsapp-float" aria-label="Escríbenos por WhatsApp" data-i18n-aria-label="whatsapp.aria">
+  <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.512-2.96-2.626-.087-.114-.694-.925-.694-1.765s.432-1.251.586-1.421c.154-.17.335-.213.447-.213.112 0 .224 0 .321.004.104.002.241-.039.374.285.136.331.468 1.14.509 1.224.041.084.068.182.012.294-.056.113-.084.183-.168.281-.084.097-.176.216-.252.288-.084.079-.172.165-.074.333.098.167.435.718.934 1.162.644.573 1.186.751 1.353.834.166.083.264.069.362-.041.098-.111.419-.487.531-.654.112-.167.224-.139.378-.083.154.056.974.459 1.141.542s.28.125.321.194c.042.07.042.404-.102.809z"/></svg>
+</a>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

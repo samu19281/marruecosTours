@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>KHAMLIA TOUR — Descubre Marruecos</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&family=Manrope:wght@300;400;500;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <span class="material-symbols-outlined nav-menu-icon">menu</span>
+      <img src="img/logo-khamlia.png" alt="Khamlia Tour" class="nav-logo-img"/>
+      <span class="logo">KHAMLIA TOUR</span>
+    </div>
+    <ul class="nav-links">
+      <li class="nav-lang-item">
+        <div class="lang-switcher lang-switcher--mobile" role="group" aria-label="Seleccionar idioma">
+          <button type="button" class="lang-btn active" data-lang="es" aria-label="Español">
+            <svg viewBox="0 0 60 40" width="22" height="15"><rect width="60" height="40" fill="#AA151B"/><rect y="10" width="60" height="20" fill="#F1BF00"/></svg>
+          </button>
+          <button type="button" class="lang-btn" data-lang="en" aria-label="English">
+            <svg viewBox="0 0 60 40" width="22" height="15"><rect width="60" height="40" fill="#00247d"/><path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" stroke-width="8"/><path d="M0,0 L60,40 M60,0 L0,40" stroke="#cf142b" stroke-width="3"/><path d="M30,0 V40 M0,20 H60" stroke="#fff" stroke-width="13"/><path d="M30,0 V40 M0,20 H60" stroke="#cf142b" stroke-width="8"/></svg>
+          </button>
+          <button type="button" class="lang-btn" data-lang="it" aria-label="Italiano">
+            <svg viewBox="0 0 60 40" width="22" height="15"><rect width="20" height="40" fill="#009246"/><rect x="20" width="20" height="40" fill="#fff"/><rect x="40" width="20" height="40" fill="#CE2B37"/></svg>
+          </button>
+        </div>
+      </li>
+      <li><a href="index.html" class="active" data-i18n="nav.inicio">Inicio</a></li>
+      <li><a href="sobre-nosotros.html" data-i18n="nav.sobreNosotros">Sobre nosotros</a></li>
+      <li><a href="experiencias.html" data-i18n="nav.experiencias">Experiencias</a></li>
+      <li><a href="destinos.html" data-i18n="nav.destinos">Destinos</a></li>
+      <li><a href="index.html#contacto" data-scroll-to="contacto" data-i18n="nav.contacto">Contacto</a></li>
+      <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+    </ul>
+    <div class="lang-switcher lang-switcher--desktop" role="group" aria-label="Seleccionar idioma">
+      <button type="button" class="lang-btn active" data-lang="es" aria-label="Español">
+        <svg viewBox="0 0 60 40" width="22" height="15"><rect width="60" height="40" fill="#AA151B"/><rect y="10" width="60" height="20" fill="#F1BF00"/></svg>
+      </button>
+      <button type="button" class="lang-btn" data-lang="en" aria-label="English">
+        <svg viewBox="0 0 60 40" width="22" height="15"><rect width="60" height="40" fill="#00247d"/><path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" stroke-width="8"/><path d="M0,0 L60,40 M60,0 L0,40" stroke="#cf142b" stroke-width="3"/><path d="M30,0 V40 M0,20 H60" stroke="#fff" stroke-width="13"/><path d="M30,0 V40 M0,20 H60" stroke="#cf142b" stroke-width="8"/></svg>
+      </button>
+      <button type="button" class="lang-btn" data-lang="it" aria-label="Italiano">
+        <svg viewBox="0 0 60 40" width="22" height="15"><rect width="20" height="40" fill="#009246"/><rect x="20" width="20" height="40" fill="#fff"/><rect x="40" width="20" height="40" fill="#CE2B37"/></svg>
+      </button>
+    </div>
+    <button class="btn btn-primary" data-scroll-to="contacto" data-i18n="nav.reserva">Reserva ahora</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO / CARRUSEL -->
+  <section class="hero-home" id="heroCarousel">
+    <div class="hero-bg photo-desert-dunes active"></div>
+    <div class="hero-bg photo-chefchaouen-1"></div>
+    <div class="hero-bg photo-kasbah"></div>
+    <div class="hero-bg photo-koutoubia"></div>
+    <div class="hero-bg photo-desert-sunset"></div>
+    <div class="hero-bg photo-khamlia-musicians"></div>
+    <div class="hero-bg photo-khamlia-camp-show"></div>
+
+    <button type="button" class="hero-arrow prev" aria-label="Imagen anterior" data-i18n-aria-label="hero.prev">
+      <span class="material-symbols-outlined">chevron_left</span>
+    </button>
+    <button type="button" class="hero-arrow next" aria-label="Imagen siguiente" data-i18n-aria-label="hero.next">
+      <span class="material-symbols-outlined">chevron_right</span>
+    </button>
+
+    <div class="hero-home-inner">
+      <div class="hero-home-content reveal">
+        <h1 data-i18n="hero.title">Descubre Marruecos<br/>como nunca antes</h1>
+        <p data-i18n="hero.subtitle">Un buen viajero no tiene planes fijos ni la intención de llegar. Disfruta del camino.</p>
+        <div class="hero-actions">
+          <a href="experiencias.html" class="btn btn-primary" data-i18n="hero.cta1">Explorar Tours</a>
+          <a href="#galeria" class="btn btn-ghost-light" data-scroll-to="galeria" data-i18n="hero.cta2">Ver Galería</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-dots">
+      <button type="button" class="hero-dot active" aria-label="Ir a la imagen 1" data-i18n-aria-label="hero.dot" data-i18n-arg="1"></button>
+      <button type="button" class="hero-dot" aria-label="Ir a la imagen 2" data-i18n-aria-label="hero.dot" data-i18n-arg="2"></button>
+      <button type="button" class="hero-dot" aria-label="Ir a la imagen 3" data-i18n-aria-label="hero.dot" data-i18n-arg="3"></button>
+      <button type="button" class="hero-dot" aria-label="Ir a la imagen 4" data-i18n-aria-label="hero.dot" data-i18n-arg="4"></button>
+      <button type="button" class="hero-dot" aria-label="Ir a la imagen 5" data-i18n-aria-label="hero.dot" data-i18n-arg="5"></button>
+      <button type="button" class="hero-dot" aria-label="Ir a la imagen 6" data-i18n-aria-label="hero.dot" data-i18n-arg="6"></button>
+      <button type="button" class="hero-dot" aria-label="Ir a la imagen 7" data-i18n-aria-label="hero.dot" data-i18n-arg="7"></button>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIAS DESTACADAS — grid asimétrico -->
+  <section class="featured wrap" id="destacadas">
+    <div class="section-head reveal">
+      <div class="heading">
+        <span class="eyebrow" data-i18n="featured.eyebrow">Lo esencial</span>
+        <h2 data-i18n="featured.title">Experiencias Destacadas</h2>
+        <p data-i18n="featured.desc">Seleccionamos cada rincón y cada momento para garantizar una inmersión cultural profunda y auténtica.</p>
+      </div>
+      <a href="experiencias.html" class="btn-text">
+        <span data-i18n="featured.viewAll">Ver todos los destinos</span>
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </a>
+    </div>
+
+    <div class="featured-grid">
+      <a href="tour-ciudades-imperiales.html" class="feature-card span-7 photo-leather-souk photo-dots reveal">
+        <div class="overlay"></div>
+        <div class="content">
+          <div>
+            <span class="label" data-i18n="featured.card1.label">Cultura &amp; Compras</span>
+            <h3 data-i18n="featured.card1.title">Zocos y Curtidurías de Fez</h3>
+          </div>
+          <div class="feature-price">
+            <span class="from" data-i18n="featured.ruta">Ruta</span>
+            <span class="price" data-i18n="common.dias8">8 días</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="tour-tanger-fez-desierto-marrakech.html" class="feature-card span-5 photo-casablanca photo-dots reveal">
+        <div class="overlay"></div>
+        <div class="content">
+          <div>
+            <span class="label" data-i18n="featured.card2.label">Historia Milenaria</span>
+            <h3 data-i18n="featured.card2.title">Ciudades Imperiales</h3>
+          </div>
+          <div class="feature-price">
+            <span class="from" data-i18n="featured.ruta">Ruta</span>
+            <span class="price" data-i18n="common.dias8">8 días</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="tour-detalle.html" class="feature-card span-12 photo-desert-camp photo-dots reveal">
+        <div class="overlay"></div>
+        <div class="content">
+          <div style="max-width:28rem;">
+            <span class="label" data-i18n="featured.card3.label">Aventura &amp; Silencio</span>
+            <h3 data-i18n="featured.card3.title">Travesía en el Sáhara</h3>
+            <p class="desc" data-i18n="featured.card3.desc">Una noche bajo las estrellas en un campamento bereber en las dunas de Merzouga.</p>
+          </div>
+          <div class="feature-price dark">
+            <div>
+              <span class="from" style="opacity:.75;" data-i18n="common.presupuestoMedida">Presupuesto a medida</span>
+              <span class="price" data-i18n="common.consultar">Consultar</span>
+            </div>
+            <span class="material-symbols-outlined">arrow_right_alt</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- GALERÍA COMPLETA -->
+  <section class="wrap gallery-section" id="galeria">
+    <div class="section-head reveal">
+      <div class="heading">
+        <span class="eyebrow" data-i18n="gallery.eyebrow">Marruecos en imágenes</span>
+        <h2 data-i18n="gallery.title">Galería</h2>
+        <p data-i18n="gallery.desc">Un vistazo real a los lugares y momentos que forman parte de nuestras rutas.</p>
+      </div>
+    </div>
+    <div class="photo-gallery reveal">
+      <img src="img/gallery/marrakech-koutoubia.webp" alt="Mezquita Koutoubia, Marrakech" loading="lazy"/>
+      <img src="img/gallery/ait-ben-haddou-kasbah.webp" alt="Kasbah de Ait Ben Haddou" loading="lazy"/>
+      <img src="img/gallery/chefchaouen-alley.webp" alt="Callejón azul de Chefchaouen" loading="lazy"/>
+      <img src="img/gallery/desert-sunset-dune.webp" alt="Atardecer en las dunas del Sáhara" loading="lazy"/>
+      <img src="img/gallery/marrakech-bahia-palace.webp" alt="Palacio de la Bahía, Marrakech" loading="lazy"/>
+      <img src="img/gallery/fez-tannery.webp" alt="Curtiduría de Fez" loading="lazy"/>
+      <img src="img/gallery/chefchaouen-courtyard.webp" alt="Patio en Chefchaouen" loading="lazy"/>
+      <img src="img/gallery/desert-dunes-woman.webp" alt="Paseo por las dunas del Sáhara" loading="lazy"/>
+      <img src="img/gallery/casablanca-mosque.webp" alt="Mezquita Hassan II, Casablanca" loading="lazy"/>
+      <img src="img/gallery/marrakech-medina-street.webp" alt="Calle de la medina de Marrakech" loading="lazy"/>
+      <img src="img/gallery/desert-camp-night.webp" alt="Campamento nómada de noche en el desierto" loading="lazy"/>
+      <img src="img/gallery/fez-leather-souk.webp" alt="Zoco de cuero de Fez" loading="lazy"/>
+      <img src="img/gallery/fez-architecture.webp" alt="Arquitectura de Fez" loading="lazy"/>
+      <img src="img/gallery/desert-tent-interior.webp" alt="Interior de haima bereber" loading="lazy"/>
+      <img src="img/gallery/fez-palais-faraj.webp" alt="Palais Faraj, Fez" loading="lazy"/>
+      <img src="img/gallery/marrakech-pottery-souk.webp" alt="Zoco de cerámica de Marrakech" loading="lazy"/>
+      <img src="img/sahara.webp" alt="Desierto del Sáhara" loading="lazy"/>
+      <img src="img/gallery/khamlia-gnawa-musicians-hall.webp" alt="Músicos Gnawa tocando en Khamlia" loading="lazy"/>
+      <img src="img/gallery/desert-dunes-couple-sunset.webp" alt="Pareja viendo el atardecer en las dunas" loading="lazy"/>
+      <img src="img/gallery/berber-guides-traditional-dress.webp" alt="Guías bereberes con vestimenta tradicional" loading="lazy"/>
+      <img src="img/gallery/marrakech-souk-lamps.webp" alt="Zoco de lámparas de Marrakech" loading="lazy"/>
+      <img src="img/gallery/chefchaouen-blue-door.webp" alt="Puerta azul en Chefchaouen" loading="lazy"/>
+      <img src="img/gallery/desert-camel-guide-blue-robe.webp" alt="Guía del desierto con camello al atardecer" loading="lazy"/>
+      <img src="img/gallery/marrakech-palace-colonnade.webp" alt="Galería de columnas de un palacio de Marrakech" loading="lazy"/>
+      <img src="img/gallery/berber-guides-portrait.webp" alt="Retrato de guías bereberes del desierto" loading="lazy"/>
+      <img src="img/gallery/marrakech-spice-shop.webp" alt="Tienda de especias en Marrakech" loading="lazy"/>
+      <img src="img/gallery/atlas-mountains-road.webp" alt="Carretera de montaña en el Alto Atlas" loading="lazy"/>
+      <img src="img/gallery/marrakech-textile-souk.webp" alt="Zoco de textiles en Marrakech" loading="lazy"/>
+      <img src="img/gallery/hassan2-mosque-courtyard-arches.webp" alt="Arcos de la Mezquita Hassan II, Casablanca" loading="lazy"/>
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section class="about arabesque-bg" style="background:var(--surface-container-low);">
+    <div class="wrap about-grid">
+      <div class="about-portrait reveal">
+        <div class="img photo-mohamed"></div>
+        <div class="glow"></div>
+      </div>
+      <div class="about-text reveal">
+        <span class="eyebrow" data-i18n="about.eyebrow">Nuestra esencia</span>
+        <h2 style="font-size:clamp(2rem,4vw,2.8rem); margin:16px 0 26px;" data-i18n="about.title">Expertos de momentos inolvidables</h2>
+        <p data-i18n="about.text"> Khamlia Tour nace en un pequeño pueblo fundado hace más de medio siglo, con población en su mayoría proveniente del áfrica subsahariana, descendiente de esclavos.
+    Después de recibir su formación, un jóven de la familia Oujeaa, vuelve a khamlia para vivir, dar a conocer y compartir el lugar y el país donde crecieron, su cultura y la familiar hospitalidad de sus gentes, con el objetivo de apostar por un turismo más sostenible y respetuoso que permita un intercambio cultural capaz de generar lazos de unión entre locales y visitantes.</p>
+        <div class="about-stats">
+          <div>
+            <span class="num">15+</span>
+            <span class="label" data-i18n="about.years">Años de experiencia</span>
+          </div>
+          <div>
+            <span class="num">200+</span>
+            <span class="label" data-i18n="about.routes">Rutas exclusivas</span>
+          </div>
+        </div>
+        <a href="sobre-nosotros.html" class="about-play">
+          <span class="circle"><span class="material-symbols-outlined">arrow_forward</span></span>
+          <span class="txt" data-i18n="about.cta">Conoce nuestra historia</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonials wrap">
+    <div class="section-head reveal" style="justify-content:center; text-align:center; flex-direction:column; align-items:center;">
+      <h2 data-i18n="common.loQueDicen">Lo que dicen nuestros viajeros</h2>
+      <div style="height:4px; width:80px; background:var(--secondary-container); margin-top:14px;"></div>
+    </div>
+
+    <div class="trust-grid reveal">
+      <!-- Reseñas reales sincronizadas desde TripAdvisor (Khamlia Tour) -->
+      <div class="trust-card">
+        <div class="ta-widget-inner">
+          <div id="TA_selfserveprop606" class="TA_selfserveprop">
+            <ul id="TA_reviewList606" class="TA_links">
+              <li>
+                <a target="_blank" rel="noopener" href="https://www.tripadvisor.es/Attraction_Review-g304017-d11884349-Reviews-Khamlia_Tour-Merzouga_Draa_Tafilalet.html">
+                  <img src="https://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <script async src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=606&amp;locationId=11884349&amp;lang=es&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=false&amp;iswide=false&amp;border=true&amp;display_version=2"></script>
+        </div>
+        <a href="https://www.tripadvisor.es/Attraction_Review-g304017-d11884349-Reviews-Khamlia_Tour-Merzouga_Draa_Tafilalet.html" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="testimonials.viewAll">Ver todas las reseñas en TripAdvisor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="wrap" id="contacto" style="padding: 20px 24px 100px;">
+    <div class="newsletter-box reveal" style="margin:0 0 32px;">
+      <div class="text">
+        <h2 data-i18n="common.busca">¿Busca algo a medida?</h2>
+        <p data-i18n="common.buscaDesc">Permítanos diseñar un itinerario único basado en sus deseos y ritmo de viaje.</p>
+      </div>
+      <a href="https://wa.me/212666146713" class="btn btn-primary" data-i18n="common.solicitarViaje">Solicitar Viaje Privado</a>
+    </div>
+
+    <form id="contactForm" class="contact-form reveal" action="https://formsubmit.co/khamliatour@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Nueva consulta desde la web — Khamlia Tour"/>
+      <input type="hidden" name="_template" value="table"/>
+      <input type="hidden" name="_captcha" value="false"/>
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+
+      <div class="contact-form-grid">
+        <div class="booking-field">
+          <label for="contactName" data-i18n="contact.name">Nombre</label>
+          <input type="text" id="contactName" name="Nombre" required/>
+        </div>
+        <div class="booking-field">
+          <label for="contactEmail" data-i18n="contact.email">Email</label>
+          <input type="email" id="contactEmail" name="Email" required/>
+        </div>
+      </div>
+      <div class="booking-field">
+        <label for="contactMessage" data-i18n="contact.message">Mensaje</label>
+        <textarea id="contactMessage" name="Mensaje" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" data-i18n="contact.send">Enviar mensaje</button>
+      <p id="formNote" class="form-note" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Khamlia Tour</h3>
+      <p data-i18n="footer.desc">Diseñando viajes que cuentan historias. Expertos en el arte de explorar Marruecos con un toque de exclusividad y respeto cultural.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.explorar">Explorar</h4>
+      <div class="footer-links">
+        <a href="sobre-nosotros.html" data-i18n="footer.sobreNosotros">Sobre nosotros</a>
+        <a href="experiencias.html" data-i18n="footer.nuestrasRutas">Nuestras rutas</a>
+        <a href="destinos.html" data-i18n="footer.destinosPrivados">Destinos privados</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.conecta">Conecta</h4>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/khamliatour.sarl/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+        <a href="https://wa.me/212666146713" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.512-2.96-2.626-.087-.114-.694-.925-.694-1.765s.432-1.251.586-1.421c.154-.17.335-.213.447-.213.112 0 .224 0 .321.004.104.002.241-.039.374.285.136.331.468 1.14.509 1.224.041.084.068.182.012.294-.056.113-.084.183-.168.281-.084.097-.176.216-.252.288-.084.079-.172.165-.074.333.098.167.435.718.934 1.162.644.573 1.186.751 1.353.834.166.083.264.069.362-.041.098-.111.419-.487.531-.654.112-.167.224-.139.378-.083.154.056.974.459 1.141.542s.28.125.321.194c.042.07.042.404-.102.809z"/></svg>
+          WhatsApp
+        </a>
+        <a href="mailto:khamliatour@gmail.com?subject=Consulta%20desde%20la%20web">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          khamliatour@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-i18n="footer.rights">© 2026 Khamlia Tour. Todos los derechos reservados.</p>
+    <div class="legal">
+      <a href="#" data-i18n="footer.privacidad">Privacidad</a>
+      <a href="#" data-i18n="footer.terminos">Términos</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/212666146713" class="whatsapp-float" aria-label="Escríbenos por WhatsApp" data-i18n-aria-label="whatsapp.aria">
+  <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.512-2.96-2.626-.087-.114-.694-.925-.694-1.765s.432-1.251.586-1.421c.154-.17.335-.213.447-.213.112 0 .224 0 .321.004.104.002.241-.039.374.285.136.331.468 1.14.509 1.224.041.084.068.182.012.294-.056.113-.084.183-.168.281-.084.097-.176.216-.252.288-.084.079-.172.165-.074.333.098.167.435.718.934 1.162.644.573 1.186.751 1.353.834.166.083.264.069.362-.041.098-.111.419-.487.531-.654.112-.167.224-.139.378-.083.154.056.974.459 1.141.542s.28.125.321.194c.042.07.042.404-.102.809z"/></svg>
+</a>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
