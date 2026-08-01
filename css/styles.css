@@ -153,6 +153,9 @@ p{ margin: 0; }
 .photo-khamlia-musicians{ background-image: url('../img/gallery/khamlia-gnawa-musicians-flags.webp'); background-size: cover; background-position: center; }
 .photo-khamlia-camp-show{ background-image: url('../img/gallery/khamlia-desert-camp-show.webp'); background-size: cover; background-position: center; }
 .photo-kasbah-town{ background-image: url('../img/gallery/kasbah-town-mountains.webp'); background-size: cover; background-position: center; }
+.photo-sam-dune{ background-image: url('../img/gallery/hero-sam-dune-sunset.webp'); background-size: cover; background-position: center; }
+.photo-patri-desert{ background-image: url('../img/gallery/hero-patri-desert-table.webp'); background-size: cover; background-position: center; }
+.photo-marrakech-jemaa{ background-image: url('../img/gallery/hero-marrakech-jemaa-elfna.webp'); background-size: cover; background-position: center; }
 
 /* ============ BOTONES ============ */
 .btn{
