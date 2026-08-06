@@ -68,6 +68,7 @@
       'footer.destinosPrivados': 'Destinos privados',
       'footer.conecta': 'Conecta',
       'footer.rights': '© 2026 Khamlia Tour. Todos los derechos reservados.',
+      'footer.avisoLegal': 'Aviso legal',
       'footer.privacidad': 'Privacidad',
       'footer.terminos': 'Términos',
 
@@ -527,6 +528,7 @@
       'footer.destinosPrivados': 'Private destinations',
       'footer.conecta': 'Connect',
       'footer.rights': '© 2026 Khamlia Tour. All rights reserved.',
+      'footer.avisoLegal': 'Legal notice',
       'footer.privacidad': 'Privacy',
       'footer.terminos': 'Terms',
 
@@ -986,6 +988,7 @@
       'footer.destinosPrivados': 'Destinazioni private',
       'footer.conecta': 'Seguici',
       'footer.rights': '© 2026 Khamlia Tour. Tutti i diritti riservati.',
+      'footer.avisoLegal': 'Note legali',
       'footer.privacidad': 'Privacy',
       'footer.terminos': 'Termini',
 
@@ -1394,6 +1397,9 @@
       if (value == null) return;
       const arg = el.getAttribute('data-i18n-arg');
       if (arg) value = value.replace('{n}', arg);
+      // innerHTML es seguro solo porque `translations` es un diccionario estático
+      // escrito a mano (algunas entradas usan <strong>). Nunca debe alimentarse
+      // con texto de usuario, query params o una API externa sin sanitizar.
       el.innerHTML = value;
     });
 

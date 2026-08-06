@@ -41,6 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* --- Botones de navegación simple (data-href="url"), sin onclick inline
+     para poder aplicar una Content-Security-Policy estricta --- */
+  document.querySelectorAll('[data-href]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      window.location.href = btn.getAttribute('data-href');
+    });
+  });
+
   /* --- Carrusel de imágenes de la portada --- */
   const hero = document.getElementById('heroCarousel');
   if (hero) {

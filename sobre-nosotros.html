@@ -3,7 +3,22 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.jscache.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.tripadvisor.com https://www.tripadvisor.es https://*.jscache.com; connect-src 'self' https://formsubmit.co; form-action 'self' https://formsubmit.co; frame-src https://www.tripadvisor.com https://www.tripadvisor.es; object-src 'none'; base-uri 'self';"/>
+<meta name="referrer" content="strict-origin-when-cross-origin"/>
+<meta name="description" content="Conoce a Khamlia Tour: nuestra historia desde el pueblo de Khamlia, nuestro equipo local y nuestro compromiso con el turismo responsable en Marruecos."/>
 <title>Sobre nosotros — Khamlia Tour</title>
+<link rel="canonical" href="https://khamliatours.com/sobre-nosotros.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Khamlia Tour"/>
+<meta property="og:locale" content="es_ES"/>
+<meta property="og:url" content="https://khamliatours.com/sobre-nosotros.html"/>
+<meta property="og:title" content="Sobre nosotros — Khamlia Tour"/>
+<meta property="og:description" content="Conoce a Khamlia Tour: nuestra historia desde el pueblo de Khamlia, nuestro equipo local y nuestro compromiso con el turismo responsable en Marruecos."/>
+<meta property="og:image" content="https://khamliatours.com/img/gallery/hero-sam-dune-sunset.webp"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Sobre nosotros — Khamlia Tour"/>
+<meta name="twitter:description" content="Conoce a Khamlia Tour: nuestra historia desde el pueblo de Khamlia, nuestro equipo local y nuestro compromiso con el turismo responsable en Marruecos."/>
+<meta name="twitter:image" content="https://khamliatours.com/img/gallery/hero-sam-dune-sunset.webp"/>
 <link rel="icon" type="image/x-icon" href="favicon.ico"/>
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
@@ -29,7 +44,7 @@
       <li><a href="index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
       <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
     </ul>
-    <button class="btn btn-primary" onclick="window.location.href='index.html#contacto'" data-i18n="nav.reserva">Reserva ahora</button>
+    <button class="btn btn-primary" data-href="index.html#contacto" data-i18n="nav.reserva">Reserva ahora</button>
   </div>
 </header>
 
@@ -72,7 +87,7 @@
   </section>
 
   <!-- NUESTRA FILOSOFIA -->
-  <section class="wrap" style="padding:100px 0 20px;">
+  <section class="wrap" style="padding-top:100px; padding-bottom:20px;">
     <div class="section-head reveal">
       <div class="heading">
         <span class="eyebrow" data-i18n="sobre.filosofia.eyebrow">Nuestra filosofía</span>
@@ -101,7 +116,7 @@
   </section>
 
   <!-- NUESTRO PUEBLO -->
-  <section class="wrap" style="padding:100px 0 20px;">
+  <section class="wrap" style="padding-top:100px; padding-bottom:20px;">
     <div class="section-head reveal">
       <div class="heading">
         <span class="eyebrow" data-i18n="sobre.pueblo.eyebrow">Nuestro pueblo</span>
@@ -109,7 +124,7 @@
       </div>
     </div>
 
-    <div class="reveal" style="display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:40px;">
+    <div class="reveal info-grid-2col">
       <div>
         <h4 style="font-size:1.2rem; margin-bottom:12px;" data-i18n="sobre.pueblo.dondeTitle">Dónde estamos</h4>
         <p style="color:var(--on-surface-variant); line-height:1.8;" data-i18n="sobre.pueblo.dondeText">Khamlia es una aldea del sureste de Marruecos, a 7 km de Merzouga.</p>
@@ -122,7 +137,7 @@
   </section>
 
   <!-- QUE OFRECEMOS EN KHAMLIA -->
-  <section class="wrap" style="padding:100px 0 20px;">
+  <section class="wrap" style="padding-top:100px; padding-bottom:20px;">
     <div class="section-head reveal">
       <div class="heading">
         <span class="eyebrow" data-i18n="sobre.ofrece.eyebrow">Qué ofrecemos en Khamlia</span>
@@ -167,7 +182,7 @@
   </section>
 
   <!-- TURISMO SOLIDARIO -->
-  <section class="wrap" style="padding:100px 0 20px;">
+  <section class="wrap" style="padding-top:100px; padding-bottom:20px;">
     <div class="section-head reveal">
       <div class="heading">
         <span class="eyebrow" data-i18n="sobre.solidario.eyebrow">Turismo solidario</span>
@@ -213,7 +228,7 @@
   </section>
 
   <!-- INFORMACION PRACTICA -->
-  <section class="wrap" style="padding:100px 0 20px;">
+  <section class="wrap" style="padding-top:100px; padding-bottom:20px;">
     <div class="section-head reveal">
       <div class="heading">
         <span class="eyebrow" data-i18n="sobre.practica.eyebrow">Información práctica</span>
@@ -313,8 +328,9 @@
   <div class="footer-bottom">
     <p data-i18n="footer.rights">© 2026 Khamlia Tour. Todos los derechos reservados.</p>
     <div class="legal">
-      <a href="#" data-i18n="footer.privacidad">Privacidad</a>
-      <a href="#" data-i18n="footer.terminos">Términos</a>
+      <a href="legal.html#aviso-legal" data-i18n="footer.avisoLegal">Aviso legal</a>
+      <a href="legal.html#privacidad" data-i18n="footer.privacidad">Privacidad</a>
+      <a href="legal.html#terminos" data-i18n="footer.terminos">Términos</a>
     </div>
   </div>
 </footer>
