@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /sin-usar/
 
-Sitemap: https://khamliatours.com/sitemap.xml
+Sitemap: https://khamliatour.com/sitemap.xml
